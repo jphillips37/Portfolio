@@ -1,7 +1,7 @@
-.right {
+.contentright {
     float:right;
 }
-.left {
+.contentleft {
     float:left;
 }
 img {
@@ -26,7 +26,6 @@ img {
     width: 930px;
     overflow:hidden;
     border-bottom-style: solid;
-    /*border-radius: 5px;*/
     border-bottom-color: #cccccc;
 }
 .navbar a {
@@ -43,3 +42,8 @@ img {
     text-align:center;
     padding-left: 50px;
 }
+/*.clearfix::after {
+    content: "";
+    display: block;
+
+*/
