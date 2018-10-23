@@ -1,3 +1,13 @@
+body {
+    background:"assets/images/background.png";
+}
+.heading {
+    color:#4aaaa5;
+    width: 955px;
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    margin-bottom: 20px;
+}
 p {
     font-size: 22px;
     line-height: 1.8;
@@ -11,7 +21,7 @@ p {
     border-right: solid;
     border-color: gray;
     border-width: 1px;
-    border-right
+    border-right: 50%;
 }
 .moveleft {
     float: left;
@@ -57,6 +67,21 @@ p {
     background: #4aaaa5;
     color: white;
     padding: 20px;
+    align-self: bottom;
+}
+.footer {
+    height: 50px;
+    padding-bottom: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(43, 41, 41, 0.911);
+    color: white;
+    text-align: center;
+    border-top-style: solid;
+    border-top-color: #4aaaa5;
+    border-top-width: 15px;
 }
 /*
 .clearfix::after {
