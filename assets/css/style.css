@@ -1,11 +1,15 @@
 body {
     background:"assets/images/background.png";
 }
+h1 {
+    font-size: 32px;
+}
 .heading {
     color:#4aaaa5;
     width: 955px;
     border-bottom-style: solid;
     border-bottom-color: gray;
+    border-bottom-width: 2px;
     margin-bottom: 20px;
 }
 p {
@@ -21,7 +25,6 @@ p {
     border-right: solid;
     border-color: gray;
     border-width: 1px;
-    border-right: 50%;
 }
 .moveleft {
     float: left;
@@ -51,12 +54,13 @@ p {
 .navbar a {
     float:left;
     text-align:center;
-    padding: 40px 15px;
+    padding: 4px 15px;
     font-size: 20px;
 }
 .navlinks {
     float: left;
-    /*margin-left: 600px;*/
+    
+
     /*margin-left: 5%;*/
 }
 .navbar h1 {
@@ -67,7 +71,7 @@ p {
     background: #4aaaa5;
     color: white;
     padding: 20px;
-    align-self: bottom;
+    margin-top: 28px;
 }
 .footer {
     height: 50px;
@@ -81,7 +85,23 @@ p {
     text-align: center;
     border-top-style: solid;
     border-top-color: #4aaaa5;
-    border-top-width: 15px;
+    border-top-width: 10px;
+}
+.textform {
+    padding: 10px 5px;
+    border-style: inset;
+    border-color: gray;
+    border-radius: 5px;
+    border-width: 1px;
+}
+.bigtextform {
+    padding: 10px 5px;
+    width: 900px;
+    height: 225px;
+    border-style: inset;
+    border-color: gray;
+    border-width: 1px; 
+    border-radius: 5px;
 }
 /*
 .clearfix::after {
