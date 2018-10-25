@@ -43,6 +43,7 @@ p {
 }
 .navbar {
     width: 100%;
+    margin: auto;
     align-content: center;
     overflow:hidden;
     border-bottom-style: solid;
@@ -83,7 +84,7 @@ p {
     text-align: center;
     border-top-style: solid;
     border-top-color: #4aaaa5;
-    border-top-width: 10px;
+    border-top-width: 8px;
 }
 .textform {
     padding: 10px 5px;
