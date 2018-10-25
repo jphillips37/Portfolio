@@ -97,6 +97,14 @@ textarea {
     padding: 5px 5px;
     border-radius: 5px;
 }
+button {
+    background-color: #4aaaa5;
+    height: 35px;
+    width: 115px;
+    color: white;
+    border-style: solid;
+    border-radius: 5px;
+}
 /*.bigtextform {
     padding: 10px 5px;
     width: 900px;
