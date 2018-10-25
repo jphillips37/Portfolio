@@ -19,7 +19,6 @@ p {
 .borderleft {
     border-left: solid;
     border-color: gray;
-    top: 50%;
 }
 .borderright {
     border-right: solid;
