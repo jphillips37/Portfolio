@@ -79,15 +79,15 @@
                         </a>
                     </div>
                     <div class="featured">
-                        <a href="https://jphillips37.github.io/unit-4-game/" target="_blank">
+                        <a href="https://jphillips37.github.io/project-2/" target="_blank">
                             <div class="row">
                                 <div class="col">
-                                    <img src="assets/images/SW_logo.jpg">
+                                    <img src="assets/images/surfing.jpg">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    RPG
+                                    Pipe Dreams
                                 </div>
                             </div>
                         </a>
@@ -95,9 +95,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-8 col-sm-12 border" id="main-content">
+        <div class="col-lg-8 col-sm-12" id="main-content">
             <div class="container">
-                <div class="col text-left">
+                <!-- <div class="col text-left">
                     <h5>About Me</h5>
                 </div>
                 <div class="row">
@@ -112,16 +112,26 @@
                     <div class="col">
                         <p>When I'm not working I have a few hobbies to fill my time. In the summers I enjoy road trips on my bike, whether they are a few hours or a few days. When winter rolls in, I enjoy snowboarding trips to Holiday Valley.</p>
                     </div>
-                </div>
+                </div> -->
+                <div class="row">
+                        <div class="col">
+                            <p>My Repositories: </p>
+                            <div class="row" id="repos">
+                                 <!-- content -->
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
         <div class="col-sm-2">
-            <div class="row">
-                <div class="col" id="repos">
-                    <!-- content -->
+            <!-- <div class="row">
+                <div class="col">
                     <p>Repositories: </p>
+                    <div class="row" id="repos">
+                         content
+                    </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="footer-margin">
@@ -136,10 +146,36 @@
         $.ajax({url: "https://api.github.com/users/jphillips37/repos", success: function(results){
             console.log(results);
             for(i=0; i < results.length; i++){
-                $("#repos").append("<a href='"+results[i].url+"'>"+results[i].name+"</a></br>")
+                //$("#repos").append("<a href='"+results[i].url+"'>"+results[i].name+"</a></br>")
+                var newCard = $("<div class='col-sm-6'>");
+                var cardBody = $("<div class='card-body border'>");
+
+                var repoTitle = $("<h5 class='card-title'>").text(results[i].name);
+                var repoLang = $("<p class='card-text'>").text(results[i].language);
+                var repoLink = $("<a href='"+results[i].html_url+"' class='btn btn-primary' target='_blank'>Click Here</a>");
+
+                cardBody.append(repoTitle);
+                cardBody.append(repoLang);
+                cardBody.append(repoLink);
+
+                newCard.append(cardBody);
+
+                $("#repos").append(newCard);
             }
         }})
     })
 </script>
 <!-- https://api.github.com/users/jphillips37/repos -->
 </html>
+
+<!-- 
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+  </div>
+ -->

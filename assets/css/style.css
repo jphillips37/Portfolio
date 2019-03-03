@@ -2,8 +2,9 @@ body {
     background-image: url("../images/background.png");
 }
 
-#main-content {
+.card-body {
     background-color: #f8f9fa;
+    margin-bottom: 3px;
     /* margin-bottom: 50px; */
 }
 
