@@ -35,7 +35,7 @@
             <div class="row text-center">
                 <div class="col project-links">
                 <!-- content -->
-                    <h5>Featured Projects</h5>
+                    <h4>Featured Projects</h4>
                     <div class="featured">
                         <a href="https://annikizzle.github.io/project1/" target="_blank">
                             <div class="row">
@@ -97,25 +97,9 @@
         </div>
         <div class="col-lg-8 col-sm-12" id="main-content">
             <div class="container">
-                <!-- <div class="col text-left">
-                    <h5>About Me</h5>
-                </div>
-                <div class="row">
-                    <div class="col-lg-2 col-sm-4 col-xs-12">
-                        <img src="assets/images/profile_pic.jpg" id="profile-pic">
-                    </div>
-                    <div class="col col-xs-12">
-                        <p>I am a Manufacturing Engineer at a local fiber optics company in Highland Heights, and I have been here for a little over five years. My main focus is developement and maintenance of the company's automated test software, as well as maintaining the database for all tested components.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <p>When I'm not working I have a few hobbies to fill my time. In the summers I enjoy road trips on my bike, whether they are a few hours or a few days. When winter rolls in, I enjoy snowboarding trips to Holiday Valley.</p>
-                    </div>
-                </div> -->
                 <div class="row">
                         <div class="col">
-                            <p>My Repositories: </p>
+                            <h4>My Repositories: </h4>
                             <div class="row" id="repos">
                                  <!-- content -->
                             </div>
@@ -124,14 +108,6 @@
             </div>
         </div>
         <div class="col-sm-2">
-            <!-- <div class="row">
-                <div class="col">
-                    <p>Repositories: </p>
-                    <div class="row" id="repos">
-                         content
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
     <div class="footer-margin">
@@ -146,8 +122,7 @@
         $.ajax({url: "https://api.github.com/users/jphillips37/repos", success: function(results){
             console.log(results);
             for(i=0; i < results.length; i++){
-                //$("#repos").append("<a href='"+results[i].url+"'>"+results[i].name+"</a></br>")
-                var newCard = $("<div class='col-sm-6'>");
+                var newCard = $("<div class='col-sm-4'>");
                 var cardBody = $("<div class='card-body border'>");
 
                 var repoTitle = $("<h5 class='card-title'>").text(results[i].name);
@@ -165,17 +140,5 @@
         }})
     })
 </script>
-<!-- https://api.github.com/users/jphillips37/repos -->
-</html>
 
-<!-- 
-    <div class="col-sm-6">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-  </div>
- -->
+</html>
