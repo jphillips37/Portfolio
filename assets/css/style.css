@@ -2,6 +2,9 @@ body {
     background-image: url("../images/background-3.jpg");
 }
 
+h4, a, span {
+    font-family: 'Source Code Pro', monospace;
+}
 .card-body {
     background-color: #f8f9fa;
     margin-bottom: 3px;
@@ -35,7 +38,7 @@ body {
     border-color: #292a2b1c;
     border-width: 1px;
     border-radius: 5px;
-    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgb(204, 204, 204);
     background: rgba(204, 204, 204, 0.5);
 }
 
