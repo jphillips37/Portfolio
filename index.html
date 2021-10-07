@@ -36,20 +36,6 @@
                 <div class="col project-links">
                     <h4>Featured Projects</h4>
                     <div class="featured">
-                        <a href="https://annikizzle.github.io/project1/" target="_blank">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/images/joyride_img.png">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">    
-                                    JoyRide
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="featured">
                         <a href="https://jphillips37.github.io/GifTastic/" target="_blank">
                             <div class="row">
                                 <div class="col">
@@ -73,20 +59,6 @@
                             <div class="row">
                                 <div class="col">
                                     Trivia
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="featured">
-                        <a href="https://jphillips37.github.io/project-2/" target="_blank">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/images/surfing.jpg">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    Pipe Dreams
                                 </div>
                             </div>
                         </a>
@@ -117,27 +89,27 @@
 </body>
 <script>
     // add repositories to the list
-    $(document).ready(function(){
-        $.ajax({url: "https://api.github.com/users/jphillips37/repos", success: function(results){
-            console.log(results);
-            for(i=0; i < results.length; i++){
-                var newCard = $("<div class='col-sm-4'>");
-                var cardBody = $("<div class='card-body border'>");
+    // $(document).ready(function(){
+    //     $.ajax({url: "https://api.github.com/users/jphillips37/repos", success: function(results){
+    //         console.log(results);
+    //         for(i=0; i < results.length; i++){
+    //             var newCard = $("<div class='col-sm-4'>");
+    //             var cardBody = $("<div class='card-body border'>");
 
-                var repoTitle = $("<h5 class='card-title'>").text(results[i].name);
-                var repoLang = $("<p class='card-text'>").text(results[i].language);
-                var repoLink = $("<a href='"+results[i].html_url+"' class='btn btn-primary' target='_blank'>Click Here</a>");
+    //             var repoTitle = $("<h5 class='card-title'>").text(results[i].name);
+    //             var repoLang = $("<p class='card-text'>").text(results[i].language);
+    //             var repoLink = $("<a href='"+results[i].html_url+"' class='btn btn-primary' target='_blank'>Click Here</a>");
 
-                cardBody.append(repoTitle);
-                cardBody.append(repoLang);
-                cardBody.append(repoLink);
+    //             cardBody.append(repoTitle);
+    //             cardBody.append(repoLang);
+    //             cardBody.append(repoLink);
 
-                newCard.append(cardBody);
+    //             newCard.append(cardBody);
 
-                $("#repos").append(newCard);
-            }
-        }})
-    })
+    //             $("#repos").append(newCard);
+    //         }
+    //     }})
+    // })
 </script>
 
 </html>
