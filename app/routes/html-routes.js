@@ -5,7 +5,7 @@ module.exports = function(app){
         res.sendfile(__dirname, "../assets/index.html");
     });
 
-    app.get("/automation", function(req, res){
+    app.get("../automation", function(req, res){
         res.sendfile(__dirname, "");
     });
 
