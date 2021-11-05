@@ -3,8 +3,7 @@ var path = require("path");
 module.exports = function(app){
     app.get('/', function(req, res){
         res.sendFile(__dirname, 'index.html');
-        //res.send("test");
-        console.log(__dirname);
+        //console.log(__dirname);
     });
 
     app.get('/automation', function(req, res){
