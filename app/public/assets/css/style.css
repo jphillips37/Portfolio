@@ -9,16 +9,3 @@ main {
 flex: 1 0 auto;
 }
 
-p {
-    font-size: 22px;
-}
-
-h4{
-    color: white;
-}
-
-#profile-pic {
-    width: 100%;
-    height: auto;
-    margin-top: 5px;
-}
