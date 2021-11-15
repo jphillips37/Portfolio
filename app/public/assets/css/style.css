@@ -6,6 +6,14 @@ body {
 }
 
 main {
-flex: 1 0 auto;
+    flex: 1 0 auto;
 }
 
+a:hover {
+    color: dimgray;
+}
+
+main img {
+    width: 250px;
+    height: auto;
+}
