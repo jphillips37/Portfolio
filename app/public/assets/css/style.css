@@ -17,3 +17,7 @@ main img {
     width: 100%;
     height: auto;
 }
+
+.brand-logo {
+    margin-left: 10px;
+}
