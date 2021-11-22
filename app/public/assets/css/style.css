@@ -16,7 +16,7 @@ a:hover {
 main img {
     width: 100%;
     height: auto;
-    border-radius: 200px;
+    /* border-radius: 200px; */
 }
 
 .brand-logo {
