@@ -18,20 +18,28 @@
 </head>
 <body>
     <header>
-        <nav class="blue-grey darken-3">
-            <div class="container nav-wrapper blue-grey darken-2">
-                <a href="#" class="brand-logo offset-l2">Web Development</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="../">Home</a></li>
-                    <li><a href="../automation" class="active">Automation</a></li>
-                    <li class="active"><a href="../web">Web Development</a></li>
-                </ul>
-            </div>
-        </nav>
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="/">Home</a></li>
+        <li><a href="/automation">Test Autom.</a></li>
+        <li><a href="/web">Web Dev.</a></li>
+      </ul>
+      <nav class="blue-grey darken-3">
+          <div class="container nav-wrapper blue-grey darken-2">
+              <a href="#" class="brand-logo truncate">Web Development</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="../">Home</a></li>
+                  <li><a href="../automation">Test Automation</a></li>
+                  <li class="active"><a href="../web">Web Development</a></li>
+              </ul>
+              <ul id="nav-mobile" class="right hide-on-large-only">
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons right">dehaze</i></a></li>
+              </ul>
+          </div>
+      </nav>
     </header>
 
     <main>
-      <div class="container">
+      <div class="container grey lighten-3">
         
       </div>
     </main>
@@ -54,4 +62,11 @@
         </div>
       </footer>
 
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $(".dropdown-trigger").dropdown({hover: false});
+        });
+      </script>
 </body>
