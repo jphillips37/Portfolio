@@ -6,8 +6,8 @@ module.exports = function(app){
         //console.log(__dirname);
     });
 
-    app.get('/automation', function(req, res){
-        res.sendFile('automation.html', {root: path.join(__dirname, '../public')});
+    app.get('/desktop', function(req, res){
+        res.sendFile('desktop.html', {root: path.join(__dirname, '../public')});
     });
 
     app.get('/web', function(req, res){
