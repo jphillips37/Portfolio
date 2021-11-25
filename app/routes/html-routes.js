@@ -2,8 +2,7 @@ var path = require("path");
 
 module.exports = function(app){
     app.get('/', function(req, res){
-        res.sendFile(__dirname, 'index.html');
-        //console.log(__dirname);
+        res.sendFile('index.html', {root: path.join(__dirname, '../public')});
     });
 
     app.get('/desktop', function(req, res){
